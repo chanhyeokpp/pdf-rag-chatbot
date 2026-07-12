@@ -1,10 +1,33 @@
 # PDF RAG Chatbot
 
-![2026 BCMD 프로그램](assets/bcmd-2026-program.jpg)
+<table>
+  <tr>
+    <td width="42%" align="center" valign="top">
+      <img src="assets/bcmd-2026-program.jpg" alt="2026 BCMD 프로그램" width="360">
+    </td>
+    <td width="58%" valign="middle">
+      <h2>문서를 이해하고 근거로 답하는 AI</h2>
+      <p>
+        한국어 정책 PDF를 대상으로 문서 추출부터 검색 품질 개선,
+        대화형 AI 서비스 구현까지 연결한 RAG 프로젝트입니다.
+      </p>
+      <p>
+        <strong>PDF Extraction</strong> → <strong>Hybrid Search</strong> →
+        <strong>Contextual Retrieval</strong> → <strong>Reranking</strong> →
+        <strong>AI Chatbot</strong>
+      </p>
+      <p>
+        동일한 평가셋을 사용해 네 가지 PDF 추출 방식과 여러 검색 전략을 비교하고,
+        LCEL·LangGraph·ReAct를 거쳐 Streamlit 웹 서비스로 완성합니다.
+      </p>
+      <p>
+        <sub>2026 BCMD · LangChain/ChatGPT 기반 AI 웹 서비스 개발</sub>
+      </p>
+    </td>
+  </tr>
+</table>
 
-한국어 정책 PDF를 대상으로 문서 추출부터 검색 품질 개선, 대화형 AI 서비스 구현까지 연결한 RAG 실습 프로젝트입니다.
-
-실습 문서는 관계부처 합동 **「저출생 추세 반전을 위한 대책」(2024. 6. 19.)**이며, 문서의 텍스트·표를 여러 방식으로 추출하고 같은 평가셋으로 검색 및 답변 성능을 비교합니다. 교재 PDF의 페이지 이미지는 저작권을 고려해 README에 수록하지 않았습니다.
+실습 문서는 관계부처 합동 **「저출생 추세 반전을 위한 대책」(2024. 6. 19.)**입니다. 문서의 텍스트·표를 여러 방식으로 추출하고 같은 평가셋으로 검색 및 답변 성능을 비교합니다. 교재 PDF의 페이지 이미지는 저작권을 고려해 README에 수록하지 않았습니다.
 
 ## 구현 흐름
 
