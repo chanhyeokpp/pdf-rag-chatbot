@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "bcmd_rag_lecture"
+version = "0.1.0"
+description = "RAG 강의 교재 (저출생 단일 코퍼스, 초급자용)"
+authors = ["trouvlemaker <trouvlemaker@gmail.com>"]
+readme = "README.md"
+package-mode = false 
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+# transformers 5.x는 prepare_for_model 제거 등 breaking change → 4.x 고정
+transformers = ">=4.33,<5.0"
+sentence-transformers = "*"
+langchain = "^0.3.18"
+langchain-community = "^0.3.18"
+langchain-openai = "^0.3.7"
+langchain-huggingface = "^0.1.2"
+pymupdf = "^1.25.5"
+# langchain-pymupdf4llm 0.4.x: pymupdf4llm>=0.0.17,<0.1.0 (langchain-core 0.3.x와 호환)
+# langchain-pymupdf4llm 0.5.x는 langchain-core>=1.0 필요 → langchain-huggingface와 충돌
+pymupdf4llm = ">=0.0.17,<0.1.0"
+langchain-pymupdf4llm = ">=0.3.0,<0.5.0"
+faiss-cpu = "^1.9.0"
+rank-bm25 = "^0.2.2"
+kiwipiepy = "^0.21"
+matplotlib = "^3.10.1"
+pandas = "^2.2.3"
+numpy = "^2.2.3"
+tqdm = "^4.67.1"
+python-dotenv = "^1.0.1"
+torch = ">=2.1.0,<2.10.0" 
+seaborn = "^0.13.2"
+streamlit = "^1.58.0"
+langgraph = ">=0.2,<0.3"
+python-pptx = "^1.0.2"
+docling = "^2.97.0"
+grandalf = "^0.8"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
